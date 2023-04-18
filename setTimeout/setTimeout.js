@@ -24,4 +24,4 @@ let birdImageTimer = setInterval(() => {
     document.getElementById("feathers").style.display = "none";
     document.getElementById("endMessage").style.display = "block";
   }, 60000);
-}, 2000);
+}, 2500);
