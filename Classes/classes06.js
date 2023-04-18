@@ -12,11 +12,11 @@ class Books {
 
   getAvailability() {
     if (this.numCopies <= 0) {
-      return `Book Name '${this.title}' of Author '${this.author}' with ISBN number '${this.isbn}' is out of stock`;
+      return `Book Name '${this.title}' written by '${this.author}' with ISBN number '${this.isbn}' is out of stock`;
     } else if (this.numCopies < 10) {
-      return `Book Name '${this.title}' of Author '${this.author}' with ISBN number '${this.isbn}' is low in stock`;
+      return `Book Name '${this.title}' written by '${this.author}' with ISBN number '${this.isbn}' is low in stock`;
     }
-    return `Book Name '${this.title}' of Author '${this.author}' with ISBN number '${this.isbn}' is in stock`;
+    return `Book Name '${this.title}' written by '${this.author}' with ISBN number '${this.isbn}' is in stock`;
   }
 
   errorMessage(clEr) {
