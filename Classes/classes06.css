@@ -69,8 +69,8 @@
     text-align: center;
     color: #FFF;
     font-weight: bold;
-    border: .2vw solid #000;
-    background: navy;
+    border: .2vw solid #FFF;
+    background: rebeccapurple;
   }
 
   .displayContainers div {
@@ -116,3 +116,4 @@
     font-size: 2rem;
     color: red;
   }
+
