@@ -16,11 +16,7 @@ let featheredFriends = [
   "https://i.pinimg.com/736x/84/d2/2d/84d22d672fac7724c2ef475bf2045482.jpg",
 ];
 
-let counter = 0;
-
 let birdImageTimer = setInterval(() => {
-  document.getElementById("seconds").innerHTML = counter;
-  counter++;
   let choice = featheredFriends[Math.floor(Math.random() * 14)];
   document.getElementById("feathers").src = choice;
   setTimeout(() => {
@@ -28,4 +24,4 @@ let birdImageTimer = setInterval(() => {
     document.getElementById("feathers").style.display = "none";
     document.getElementById("endMessage").style.display = "block";
   }, 60000);
-}, 1000);
+}, 2000);
