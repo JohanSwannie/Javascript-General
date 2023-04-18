@@ -11,13 +11,17 @@ class Rectangle {
   }
 
   set anotherObject(value) {
+    let heightRange = [
+      10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90,
+    ];
+    let colorRange = ["blue", "yellow", "green", "orange", "red", "purple"];
     this.width = value;
-    this.height = 20;
-    this.color = "orange";
+    this.height = heightRange[Math.floor(Math.random() * 16)];
+    this.color = colorRange[Math.floor(Math.random() * 5)];
   }
 
   get theAreas() {
-    return `The area of the ${this.color} rectangle is now ${
+    return `The area of the randomly chosen ${this.color} rectangle is now ${
       this.width * this.height
     } square meters`;
   }
