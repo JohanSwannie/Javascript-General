@@ -7,19 +7,19 @@ class Rectangle {
   getRectangleArea() {
     return `The area of the ${this.color} rectangle is ${
       this.width * this.height
-    } meters`;
+    } square meters`;
   }
 
   set anotherObject(value) {
     this.width = value;
-    this.height = value;
+    this.height = 20;
     this.color = "orange";
   }
 
   get theAreas() {
     return `The area of the ${this.color} rectangle is now ${
       this.width * this.height
-    } meters`;
+    } square meters`;
   }
 }
 
