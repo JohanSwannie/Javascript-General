@@ -12,11 +12,12 @@ class Rectangle {
 
   set anotherObject(value) {
     let heightRange = [
-      10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90,
+      10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 110,
+      200, 350, 600, 900, 1150, 2000, 3000, 8000, 5000, 2250, 150, 400, 1250,
     ];
     let colorRange = ["blue", "yellow", "green", "orange", "red", "purple"];
     this.width = value;
-    this.height = heightRange[Math.floor(Math.random() * 16)];
+    this.height = heightRange[Math.floor(Math.random() * 30)];
     this.color = colorRange[Math.floor(Math.random() * 5)];
   }
 
@@ -39,4 +40,4 @@ document.write(`<span style='font-family: "Trirong", serif; color:
 rect1.anotherObject = 30;
 
 document.write(`<span style='font-family: "Trirong", serif; color:
-#FFF'>${rect1.theAreas} </span>`);
+#FFF'>${rect1.theAreas} </span></br>`);
