@@ -1,7 +1,7 @@
 const timeClock = () => {
-  let seconds = 1;
-  let minutes = 0;
-  let hours = 0;
+  let seconds = 1,
+    minutes = 0,
+    hours = 0;
 
   let timerId = setInterval(() => {
     document.getElementById("seconds").innerHTML = seconds;
