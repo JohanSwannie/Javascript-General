@@ -13,14 +13,12 @@ function startTime() {
   m = checkTime(m);
   s = checkTime(s);
   document.getElementById("txt").innerHTML = h + " : " + m + " : " + s;
-  if (s % 3 === 0) {
-    document.getElementById("txt").style.backgroundColor = "rgb(200, 195, 210)";
-    document.getElementById("txt").style.color = "#000";
-    document.getElementById("txt").style.textShadow = "1px 8px 8px #FFF";
+  if (s % 7 === 0) {
+    document.getElementById("txt").classList.remove("lightTheme");
+    document.getElementById("txt").classList.add("darkTheme");
   } else {
-    document.getElementById("txt").style.backgroundColor = "rgb(195, 152, 238)";
-    document.getElementById("txt").style.color = "#FFF";
-    document.getElementById("txt").style.textShadow = "1px 8px 8px #000";
+    document.getElementById("txt").classList.remove("darkTheme");
+    document.getElementById("txt").classList.add("lightTheme");
   }
   setTimeout(startTime, 1000);
 }
