@@ -6,18 +6,21 @@ class Humans {
   }
 
   personOne() {
-    document.write(`<span style='font-family: "Trirong", serif; color:
-    #FFF'>${this.person1} only likes ${this.person2} </span> </br>`);
+    document.write(
+      `<span>${this.person1} only likes ${this.person2} </spane=> </br>`
+    );
   }
 
   personTwo() {
-    document.write(`<span style='font-family: "Trirong", serif; color:
-    #FFF'>${this.person2} only likes ${this.person1} </span> </br>`);
+    document.write(
+      `<span>${this.person2} only likes ${this.person1} </spanstyle=> </br>`
+    );
   }
 
   personThree() {
-    document.write(`<span style='font-family: "Trirong", serif; color:
-    #FFF'>${this.person3} only likes ${this.person2} </span> </br>`);
+    document.write(
+      `<span>${this.person3} only likes ${this.person2} </span> </br>`
+    );
   }
 }
 
@@ -28,18 +31,17 @@ class ExtraPerson extends Humans {
   }
 
   personThree() {
-    document.write(`<span style='font-family: "Trirong", serif; color:
-    #FFF'>${this.person4} has reported that ${this.person3} likes
+    document.write(`<span>${this.person4} has reported that ${this.person3} likes
     ${this.person1} as well, inspite of the fact that ${this.person1}
-    only likes ${this.person2} </span> </br>`);
+    only likes ${this.person2} </spanle=> </br>`);
   }
 
   personTwo() {
     super.personTwo();
-    document.write(`<span style='font-family: "Trirong", serif; color:
-    #FFF'>BUT A HUGE CHANGE IN ATTITUDE HAS OCCURED </span> </br>`);
-    document.write(`<span style='font-family: "Trirong", serif; color:
-    #FFF'>Although ${this.person2} only liked ${this.person1} before,
+    document.write(
+      `<span>BUT A HUGE CHANGE IN ATTITUDE HAS OCCURED </span> </br>`
+    );
+    document.write(`<span>Although ${this.person2} only liked ${this.person1} before,
     she also now likes ${this.person3} </span>`);
   }
 }
