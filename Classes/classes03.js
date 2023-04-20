@@ -8,7 +8,7 @@ class Person {
 
   message() {
     document.write(`<span>The name of the person is ${this.name} ${this.surname} of age
-      ${this.age} and he/she likes ${this.hobby}</span=> </br> </br>`);
+      ${this.age} and he/she likes ${this.hobby}</span></br></br>`);
   }
 }
 
@@ -25,11 +25,12 @@ class CareerPerson extends Person {
       ${this.jobDescription} for ${parseFloat(
       (this.monthsInJob / 12).toFixed(1)
     )}
-      years.</spanstyle=> </br> </br>`);
+      years.</span></br></br>`);
   }
 }
 
 let newPerson1 = new Person("Mary", "Hanks", 39, "Tennis");
+
 let newCareerPerson1 = new CareerPerson(
   "Peter",
   "Brown",
@@ -38,6 +39,7 @@ let newCareerPerson1 = new CareerPerson(
   "Software Developer",
   240
 );
+
 newCareerPerson1.message();
 
 const careerPeople = [
@@ -95,8 +97,8 @@ const careerPeople = [
 ];
 
 function showCareerPeople(careerPeople) {
-  for (let person of careerPeople) {
-    person.careerPersonDescription();
+  for (let p of careerPeople) {
+    p.careerPersonDescription();
   }
 }
 
