@@ -42,6 +42,8 @@ let newCareerPerson1 = new CareerPerson(
 
 newCareerPerson1.message();
 
+newCareerPerson1.careerPersonDescription();
+
 const careerPeople = [
   new CareerPerson(
     "Gerry",
