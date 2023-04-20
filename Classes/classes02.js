@@ -9,6 +9,10 @@ class Box {
   }
 
   static test2(width, height) {
+    return `The surface is - ${width * height} square meters`;
+  }
+
+  static test3(width, height) {
     return `Is the square area greater than 200 - ${width * height > 200}`;
   }
 }
@@ -21,4 +25,5 @@ for (var value in box1) {
 }
 
 document.write(`<span>${Box.test1(14, 14)}</span></br>`);
-document.write(`<span>${Box.test2(13, 13)}</span>`);
+document.write(`<span>${Box.test2(13, 13)}</span></br>`);
+document.write(`<span>${Box.test3(13, 13)}</span>`);
