@@ -1,7 +1,7 @@
 class Box {
   constructor(_width) {
     this.width = _width;
-    this.height = _width;
+    this.height = _width - 1;
   }
 
   static test1(width, height) {
@@ -24,6 +24,6 @@ for (var value in box1) {
   }
 }
 
-document.write(`<span>${Box.test1(14, 14)}</span></br>`);
-document.write(`<span>${Box.test2(13, 13)}</span></br>`);
-document.write(`<span>${Box.test3(13, 13)}</span>`);
+document.write(`<span>${Box.test1(10, 10)}</span></br>`);
+document.write(`<span>${Box.test2(12, 18)}</span></br>`);
+document.write(`<span>${Box.test3(15, 13)}</span>`);
