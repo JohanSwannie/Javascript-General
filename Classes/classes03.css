@@ -9,12 +9,17 @@ body {
 }
 
 h2 {
-    text-align: center; 
     color: #fff; 
+    text-align: center; 
+    text-decoration: underline;
+    margin-bottom: 2rem;
 }
 
 span {
+    display: flex;
+    justify-content: center;
+    color:#FFF;
+    font-size: 16px;
     font-family: "Trirong", serif; 
-    color:#FFF
 }
 
