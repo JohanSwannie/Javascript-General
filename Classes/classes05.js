@@ -35,7 +35,7 @@ class ElementsBinding {
 
   removeTags(removeTextContent) {
     const IDX2 = this.listDescr.indexOf(removeTextContent);
-    if (IDX2 > -1) {
+    if (IDX2 !== -1) {
       this.listDescr.splice(IDX2, 1);
       this.updateTags();
     }
@@ -50,24 +50,13 @@ const nameArray = [
   "Barry",
   "Luke",
   "Andrew",
-  "Dominique",
-  "Louise",
   "Matthew",
   "Brendan",
   "Graham",
-  "Mary",
-  "Rosanne",
-  "Noel",
   "Don",
   "James",
-  "Jason",
-  "Dianne",
-  "Pollos",
   "Carl",
   "Nancy",
-  "Oswald",
-  "Oscar",
-  "Andreas",
   "Dalene",
   "Suzanne",
   "Roy",
