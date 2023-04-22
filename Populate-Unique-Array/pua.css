@@ -20,14 +20,20 @@ input {
   color: #fff;
 }
 
-#detail {
+#detail1, #detail2 {
   color: #fff;
   background-color: blue;
   padding: 1.5rem;
   border: 2px solid #fff;
 }
 
+#detail2 {
+    display: none;
+    margin-top: 1rem;
+}
+
 #error {
+  display: none;
   color: crimson;
   font-size: 30px;
 }
