@@ -3,6 +3,7 @@ let detail2 = document.getElementById("detail2");
 let detail3 = document.getElementById("detail3");
 let inner = document.getElementById("inner");
 let error = document.getElementById("error");
+let error2 = document.getElementById("error2");
 
 let array1 = [12, 8, 5, 18, 10, 22, 39, 4, 17, 30];
 let array2 = [];
@@ -17,38 +18,50 @@ function errorInput(inputValue) {
   setTimeout(() => {
     error.innerHTML = "";
     error.style.display = "none";
-  }, 2000);
+  }, 3000);
 }
 
 function takeIt() {
   let inputValue = parseInt(inner.value);
-  let IDX = array1.indexOf(inputValue);
-  if (IDX === -1) {
-    if (array1.length > 15) {
-      let IDX2 = array2.indexOf(inputValue);
-      if (IDX2 === -1) {
-        if (array2.length > 15) {
-          let IDX3 = array3.indexOf(inputValue);
-          if (IDX3 === -1) {
-            array3.push(inputValue);
-            detail3.innerHTML = array3;
-            detail3.style.display = "block";
+  if (!isNaN(inputValue)) {
+    if (inputValue > 1000 || inputValue < -1000) {
+      error2.style.display = "block";
+      error2.innerHTML = `Maximum value = 1000 & Minimum value = -1000`;
+      setTimeout(() => {
+        error2.innerHTML = "";
+        error2.style.display = "none";
+      }, 3000);
+    } else {
+      let IDX = array1.indexOf(inputValue);
+      if (IDX === -1) {
+        if (array1.length === 20) {
+          let IDX2 = array2.indexOf(inputValue);
+          if (IDX2 === -1) {
+            if (array2.length === 20) {
+              let IDX3 = array3.indexOf(inputValue);
+              if (IDX3 === -1) {
+                array3.push(inputValue);
+                detail3.innerHTML = array3;
+                detail3.style.display = "block";
+              } else {
+                errorInput(inputValue);
+              }
+            } else {
+              array2.push(inputValue);
+              detail2.innerHTML = array2;
+              detail2.style.display = "block";
+            }
           } else {
             errorInput(inputValue);
           }
+        } else {
+          array1.push(inputValue);
+          detail1.innerHTML = array1;
         }
-        array2.push(inputValue);
-        detail2.innerHTML = array2;
-        detail2.style.display = "block";
+        inner.value = "";
       } else {
         errorInput(inputValue);
       }
-    } else {
-      array1.push(inputValue);
-      detail1.innerHTML = array1;
     }
-    inner.value = "";
-  } else {
-    errorInput(inputValue);
   }
 }
