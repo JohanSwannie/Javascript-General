@@ -20,14 +20,14 @@ input {
   color: #fff;
 }
 
-#detail1, #detail2 {
+#detail1, #detail2, #detail3 {
   color: #fff;
   background-color: blue;
   padding: 1.5rem;
   border: 2px solid #fff;
 }
 
-#detail2 {
+#detail2, #detail3 {
     display: none;
     margin-top: 1rem;
 }
