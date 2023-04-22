@@ -1,10 +1,12 @@
 let detail1 = document.getElementById("detail1");
 let detail2 = document.getElementById("detail2");
+let detail3 = document.getElementById("detail3");
 let inner = document.getElementById("inner");
 let error = document.getElementById("error");
 
 let array1 = [12, 8, 5, 18, 10, 22, 39, 4, 17, 30];
 let array2 = [];
+let array3 = [];
 
 detail1.innerHTML = array1;
 
@@ -22,9 +24,19 @@ function takeIt() {
   let inputValue = parseInt(inner.value);
   let IDX = array1.indexOf(inputValue);
   if (IDX === -1) {
-    if (detail1.offsetWidth > 350) {
+    if (array1.length > 15) {
       let IDX2 = array2.indexOf(inputValue);
       if (IDX2 === -1) {
+        if (array2.length > 15) {
+          let IDX3 = array3.indexOf(inputValue);
+          if (IDX3 === -1) {
+            array3.push(inputValue);
+            detail3.innerHTML = array3;
+            detail3.style.display = "block";
+          } else {
+            errorInput(inputValue);
+          }
+        }
         array2.push(inputValue);
         detail2.innerHTML = array2;
         detail2.style.display = "block";
