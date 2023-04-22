@@ -37,7 +37,7 @@ input {
   margin-top: 1rem;
 }
 
-#error, #error2 {
+#error, #error2, #error3 {
   display: none;
   color: crimson;
   font-size: 30px;
