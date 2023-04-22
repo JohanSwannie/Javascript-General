@@ -1,0 +1,33 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(178, 132, 222);
+}
+
+.container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+input {
+  background-color: brown;
+  color: #fff;
+}
+
+#detail {
+  color: #fff;
+  background-color: blue;
+  padding: 1.5rem;
+  border: 2px solid #fff;
+}
+
+#error {
+  color: crimson;
+  font-size: 30px;
+}
