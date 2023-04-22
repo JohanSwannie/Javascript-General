@@ -37,6 +37,7 @@ class ElementsBinding {
     const IDX2 = this.listDescr.indexOf(removeTextContent);
     if (IDX2 !== -1) {
       this.listDescr.splice(IDX2, 1);
+      alert(this.listDescr.length);
       this.updateTags();
     }
   }
