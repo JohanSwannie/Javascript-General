@@ -24,9 +24,9 @@ function errorInput(inputValue) {
 function takeIt() {
   let inputValue = parseInt(inner.value);
   if (!isNaN(inputValue)) {
-    if (inputValue > 1000 || inputValue < -1000) {
+    if (inputValue > 100 || inputValue < -100) {
       error2.style.display = "block";
-      error2.innerHTML = `Maximum value = 1000 & Minimum value = -1000`;
+      error2.innerHTML = `Maximum value = 100 & Minimum value = -100`;
       setTimeout(() => {
         error2.innerHTML = "";
         error2.style.display = "none";
