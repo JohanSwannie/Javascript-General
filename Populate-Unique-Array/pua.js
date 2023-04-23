@@ -35,12 +35,12 @@ function takeIt() {
     } else {
       let IDX = array1.indexOf(inputValue);
       if (IDX === -1) {
-        if (array1.length === 7) {
+        if (array1.length === 20) {
           let IDX2 = array2.indexOf(inputValue);
           if (IDX2 === -1) {
-            if (array2.length === 7) {
+            if (array2.length === 20) {
               let IDX3 = array3.indexOf(inputValue);
-              if (array3.length === 7) {
+              if (array3.length === 20) {
                 error3.style.display = "block";
                 error3.innerHTML = `All Arrays now completed`;
                 inner.value = "";
