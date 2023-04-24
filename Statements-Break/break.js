@@ -56,5 +56,8 @@ switch (new Date().getDay()) {
   case 6:
     dayOfWeek = "Saturday";
     break;
+  default:
+    dayOfWeek = "Unknown";
 }
+
 document.getElementById("break3").innerHTML = `Break 3 - Today is ${dayOfWeek}`;
