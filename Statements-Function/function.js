@@ -22,6 +22,8 @@ function determineDay(dayOfWeek) {
     case 6:
       dayName = "Saturday";
       break;
+    default:
+      dayName = "Unknown";
   }
   return dayName;
 }
