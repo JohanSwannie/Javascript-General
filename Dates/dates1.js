@@ -12,7 +12,7 @@ function startTime() {
   var s = today.getSeconds();
   m = checkTime(m);
   s = checkTime(s);
-  document.getElementById("txt").innerHTML = h + " : " + m + " : " + s;
+  document.getElementById("txt").innerHTML = `${h} : ${m} : ${s}`;
   if (s % 7 === 0) {
     document.getElementById("txt").classList.remove("lightTheme");
     document.getElementById("txt").classList.add("darkTheme");
